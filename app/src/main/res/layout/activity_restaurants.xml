@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,7 +10,8 @@
         android:layout_height="wrap_content"
         android:text="Restaurants near"
         android:id="@+id/locationTextView"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="52dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <ListView
