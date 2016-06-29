@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:text="MyRestaurants"
         android:textColor="@color/colorTextIcons"
-        android:textSize="40sp"
+        android:textSize="60sp"
         android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
