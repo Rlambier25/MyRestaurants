@@ -1,8 +1,6 @@
 package com.epicodus.myrestaurants;
 
-/**
- * Created by Guest on 7/5/16.
- */
+// These are the base url and query parameters for the API request
 public class Constants {
     public static final String YELP_CONSUMER_KEY = BuildConfig.YELP_CONSUMER_KEY;
     public static final String YELP_CONSUMER_SECRET = BuildConfig.YELP_CONSUMER_SECRET;
@@ -11,3 +9,4 @@ public class Constants {
     public static final String YELP_BASE_URL = "https://api.yelp.com/v2/search?term=food";
     public static final String YELP_LOCATION_QUERY_PARAMETER = "location";
 }
+
