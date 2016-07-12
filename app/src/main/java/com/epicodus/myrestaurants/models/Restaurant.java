@@ -15,7 +15,7 @@ public class Restaurant {
     private List<String> address = new ArrayList<>();
     private double latitude;
     private double longitude;
-    private ArrayList<String> mCategories = new ArrayList<>();
+    private ArrayList<String> categories = new ArrayList<>();
 
     public Restaurant() {}
 
@@ -30,7 +30,7 @@ public class Restaurant {
         this.address = address;
         this.latitude = latitude;
         this.longitude = longitude;
-        this.mCategories = categories;
+        this.categories = categories;
         imageUrl = getLargeImageUrl(imageUrl);
     }
 
@@ -81,7 +81,7 @@ public class Restaurant {
 
     public List<String> getCategories() {
 
-        return mCategories;
+        return categories;
     }
 
     public String getLargeInageUrl(String imageUrl) {

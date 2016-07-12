@@ -3,6 +3,7 @@ package com.epicodus.myrestaurants.adapters;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,6 +22,7 @@ import com.squareup.picasso.Picasso;
 import org.parceler.Parcels;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Guest on 7/11/16.
@@ -53,6 +55,8 @@ public class FirebaseRestaurantViewHolder extends RecyclerView.ViewHolder implem
 
         nameTextView.setText(restaurant.getName());
         categoryTextView.setText(restaurant.getCategories().get(0));
+        String output = restaurant.getCategories().toString();
+        Log.d("FRVH", output);
         ratingTextView.setText("Rating: " + restaurant.getRating() + "/5");
     }
 
