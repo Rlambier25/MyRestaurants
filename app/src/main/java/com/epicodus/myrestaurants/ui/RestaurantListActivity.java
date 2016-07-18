@@ -2,10 +2,10 @@ package com.epicodus.myrestaurants.ui;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
@@ -16,8 +16,8 @@ import android.view.MenuItem;
 import com.epicodus.myrestaurants.Constants;
 import com.epicodus.myrestaurants.R;
 import com.epicodus.myrestaurants.adapters.RestaurantListAdapter;
-import com.epicodus.myrestaurants.models.Restaurant;
 import com.epicodus.myrestaurants.services.YelpService;
+import com.epicodus.myrestaurants.models.Restaurant;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -82,6 +82,7 @@ public class RestaurantListActivity extends AppCompatActivity {
             public boolean onQueryTextChange(String newText) {
                 return false;
             }
+
         });
 
         return true;
@@ -112,7 +113,8 @@ public class RestaurantListActivity extends AppCompatActivity {
                     public void run() {
                         mAdapter = new RestaurantListAdapter(getApplicationContext(), mRestaurants);
                         mRecyclerView.setAdapter(mAdapter);
-                        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(RestaurantListActivity.this);
+                        RecyclerView.LayoutManager layoutManager =
+                                new LinearLayoutManager(RestaurantListActivity.this);
                         mRecyclerView.setLayoutManager(layoutManager);
                         mRecyclerView.setHasFixedSize(true);
                     }
