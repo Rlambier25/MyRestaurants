@@ -38,38 +38,47 @@ public class Restaurant {
     }
 
     public String getName() {
+
         return name;
     }
 
     public String getPhone() {
+
         return phone;
     }
 
     public String getWebsite() {
+
         return  website;
     }
 
     public double getRating() {
+
         return rating;
     }
 
     public String getImageUrl(){
+
         return imageUrl;
     }
 
     public List<String> getAddress() {
+
         return address;
     }
 
     public double getLatitude() {
+
         return latitude;
     }
 
     public double getLongitude() {
+
         return longitude;
     }
 
     public List<String> getCategories() {
+
         return categories;
     }
 
@@ -79,18 +88,22 @@ public class Restaurant {
     }
 
     public String getPushId(){
+
         return pushId;
     }
 
     public void setPushId(String pushId){
+
         this.pushId = pushId;
     }
 
     public String getIndex() {
+
         return index;
     }
 
     public void setIndex(String index) {
+
         this.index = index;
     }
 }
